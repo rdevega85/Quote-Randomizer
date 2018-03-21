@@ -21,7 +21,7 @@ background-color: transparent;
 color: #fff6ef;
 font-size: 30px;
 text-shadow: 2px 1px #000f21;
-font-family: 'Mirza', cursive;
+font-family: 'Mirza', 'cursive';
 margin-top: 310px;
 display: block;
 }
@@ -37,5 +37,5 @@ margin-top: 300px;
 font-size: 26px;
 width: 350px;
 margin-top: 280px;
-background-color: none; 
+font-family: 'Mirza', verdana;
 }
