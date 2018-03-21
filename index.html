@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="css/style.css">
+      <title>Quote Randomizer</title>
+   </head>
+   <body>
+      <div class="bg">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-sm-4" style="background-color:transparent;"></div>
+               <div class="col-sm-4" style="background-color:transparent border-style: transparent;">
+                  <textarea id="txtbox" cols="40" rows="6" onclick="quotes()" readonly disabled></textarea>
+                  <div>
+                     <script>
+                        function quotes(){
+                         var aquote = new Array;
+                         aquote[0]="\"Nothing is impossible, the word itself says “I'm possible”!\ —Audrey Hepburn";
+                         aquote[1]="\"Everything has beauty, but not everyone can see.\" —Confucius";
+                         aquote[2]="\"We can easily forgive a child who is afraid of the dark; the real tragedy of life is when men are afraid of the light.\" —Plato";
+                         aquote[3]="\"What we achieve inwardly will change outer reality.\" —Plutarch";
+                         aquote[4]="\"Don't cry because it's over, smile because it happened.\" —Dr. Seuss";
+                         aquote[5]="\"A room without books is like a body without a soul.\" —Marcus Tullius Cicero";
+                         aquote[6]="\"You only live once, but if you do it right, once is enough.\" —Mae West";
+                         aquote[7]="\"If you tell the truth, you don't have to remember anything.\" —Mark Twain";
+                         aquote[8]="\"Well done is better than well said.\" —Benjamin Franklin";
+                         aquote[9]="\"I could either watch it happen or be a part of it.\" —Elon Musk";
+                         aquote[10]="\"Innovation distinguishes between a leader and a follower.\" —Steve Jobs";
+                         aquote[11]="\"All those who are around me are the bridge to my success, so they are all important.\" —Manny Pacquiao";
+                         aquote[12]="\"Love your family, work super hard, live your passion.\" —Gary Vaynerchuk";
+                         aquote[13]="\"Train yourself to let go of everything you fear to lose.\" —Yoda";
+                         aquote[14]="\"We look up at the same stars and see such different things.\" —Jon Snow";
+                         aquote[15]="\"Believe you can and you're halfway there.\" —T Roosevelt";
+                         aquote[16]="\"You win some, you lose some. But you live, you live to fight another day!\" —Craig's dad";
+                         aquote[17]="\"Happiness can be found even in the darkest of times, if one only remembers to turn on the light.\" —Dumbledore";
+                         aquote[18]="\"A wise man told me don't argue with fools. Cause people from a distance can't tell who is who.\" —Shawn Carter";
+                         aquote[19]="\"The present is theirs; the future, for which I really worked, is mine.\" —Tesla";
+                         aquote[20]="\"I don't care if you're gay, black, Chinese, straight. That means nothing to me. It's all an illusion.\" —Joe Rogan";
+                         aquote[21]="\"You just have to live and life will give you pictures.\" —Bresson";
+                         aquote[22]="\"The two most important days in your life are the day you are born and the day you find out why.\" –Mark Twain";
+                         aquote[23]="\"Brothers, what we do in life... echoes in eternity.\" –Maximus";
+                         aquote[24]="\"There is no balance, all or nothing.\" –David Choe";
+                         aquote[25]="\"Claim ownership of your dreams.\" –Chris Gardner";
+                         aquote[26]="\"The more you seek the uncomfortable the more you will become comfortable.\" –Conor McGregor";
+                         aquote[27]="\"True healing is realizing you were never sick in the first place.\" –Duncan Trussell";
+                         aquote[28]="\"Strive for that greatness of spirit that measures life not by its disappointments but by its possibilities.\" –Du Bois";
+                         aquote[29]="\"And when you smile, the whole world stops and stares for a while\" –Bruno Mars";
+                         aquote[30]="\"Everything negative - pressure, challenges - is all an opportunity for me to rise.\" –Kobe";
+                         aquote[31]="\"The best way to guarantee a loss is to quit.\" –Morgan Freeman";
+                         aquote[32]="\"Recognize opportunity when it’s not a paycheck to it.\" –Charlamagne";
+                         aquote[33]="\"Whenever you find yourself on the side of the majority, it is time to pause and reflect.\" –Mark Twain";
+                         aquote[34]="\"Success isn't always about greatness. It's about consistency. Consistent hard work leads to success. Greatness will come.\" –The Rock";
+                         aquote[35]="\"They always say time changes things, but you actually have to change them yourself.\" –Andy Warhol";
+                         aquote[36]="\"A man who procrastinates in his choosing will inevitably have his choice made for him by circumstance.\" –Hunter S. Thompson";
+                         aquote[37]="\"Anything worth doing is worth doing right.\" –Hunter S. Thompson";
+                         aquote[38]="\"A brand for a company is like a reputation for a person. You earn reputation by trying to do hard things well.\" –Jeff Bezos";
+                         aquote[39]="\"Move fast and break things. Unless you are breaking stuff, you are not moving fast enough.\" –Mark Zuckerberg";
+                         aquote[40]="\"When you are not practicing, someone else is getting better.\" –Allen Iverson";
+                         aquote[41]="\"There is nothing worse than a sharp image of a fuzzy concept.\" –Ansel Adams";
+                         aquote[42]="\"The universe rewards calculated risk and passion.\" –Joe Rogan";
+                         aquote[43]="\"The time you spend hating on someone robs you of your own time. You are literally hating on yourself and don't even realize it.\" –Joe Rogan";
+                         aquote[44]="\"I stayed true to my dreams and, eventually, they came true.\" –Kevin Hart";
+                         aquote[45]="\"Everything's amazing right now, and nobody's happy.\" –Louis CK";
+
+                         rdmQuote = Math.floor(Math.random()*aquote.length);
+                         document.getElementById("txtbox") .value=aquote[rdmQuote];
+                        }
+                        window.onload=quotes;
+                     </script>
+                  </div>
+               </div>
+               <div class="col-sm-4" style="background-color:transparent;"></div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

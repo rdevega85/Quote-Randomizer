@@ -1,0 +1,40 @@
+body, html {
+margin: 0;
+height: 100%;
+}
+.bg {
+height: 100%;
+background-image: url('../background2.jpg');
+background-color: #b28845;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+/*.col-sm-4 {
+margin: 70px;
+margin-top: 340px;
+}
+*/
+#txtbox {
+border-style: none;
+background-color: transparent;
+color: #fff6ef;
+font-size: 30px;
+text-shadow: 2px 1px #000f21;
+font-family: 'Mirza', cursive;
+margin-top: 310px;
+display: block;
+}
+/*
+button {
+margin-left: auto;
+margin-right: auto;
+margin-top: 300px;
+}
+*/
+@media only screen and (max-width: 600px) {
+#txtbox {
+font-size: 26px;
+width: 350px;
+margin-top: 280px;
+}
