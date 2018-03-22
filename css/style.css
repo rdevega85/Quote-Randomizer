@@ -39,5 +39,6 @@ width: 350px;
 margin-top: 280px;
 text-shadow: 2px 1px black;
 font-family: 'Mirza', cursive;
-background: rgba(255, 255, 255, .1);
+color: white;
+background: rgba(255, 255, 255, .001);
 }
